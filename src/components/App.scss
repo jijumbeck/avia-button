@@ -1,0 +1,73 @@
+$primary-color-800: #0656fe;
+$primary-color-500: #0c73fe;
+$primary-color-300: #6ebaff;
+$primary-color-200: #a3d3ff;
+$primary-color-50: #daeaff;
+$primary-color-25: #e8f4ff;
+
+$secondary-color-800: #f25122;
+$secondary-color-500: #fa742d;
+$secondary-color-300: #ffa06c;
+$secondary-color-200: #ffbc97;
+$secondary-color-100: #ffd8c3;
+$secondary-color-50: #fef1e9;
+
+$white-color: #fff;
+
+$text-font-family: Stapel, -apple-system, BlinkMacSystemFont, Inter, Roboto, Helvetica, Arial, sans-serif;
+
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+
+.App {
+    background-color: $primary-color-500;
+    font-family: $text-font-family;
+
+    min-height: 100%;
+
+    text-align: center;
+
+    h1 {
+        color: $white-color;
+        font-size: 44px;
+        font-variant-numeric: lining-nums;
+        font-weight: 700;
+        line-height: 57px;
+        margin: 0 0 8px;
+
+        text-wrap: balance;
+    }
+}
+
+.content {
+    padding: 20px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $md) {
+        width: 600px;
+        padding-top: 100px;
+    }
+
+    @media screen and (min-width: $lg) {
+        width: 800px;
+    }
+}
+
+.button-container {
+    padding: 40px;
+    padding-top: 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media screen and (min-width: $md) {
+        padding: 60px;
+    }
+
+    @media screen and (min-width: $lg) {
+        padding: 100px;
+    }
+}

@@ -1,0 +1,40 @@
+@import 'App';
+
+$border-radius: 16px;
+
+.avia-button {
+    background-color: $secondary-color-500;
+    $hover-color: mix($secondary-color-500, #000, 90%);
+    color: $white-color;
+
+    min-height: 60px;
+    padding: 0 16px;
+
+    border: none;
+    border-radius: $border-radius;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $hover-color;
+    }
+
+    &:active {
+        background-color: $hover-color;
+    }
+
+    &:focus {
+        background-color: $hover-color;
+        outline: 1px solid $hover-color;
+        outline-offset: 5px;
+    }
+}
+
+.avia-button__text { 
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 25px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

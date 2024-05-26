@@ -38,10 +38,11 @@ export default (env: EnvVariabales) => {
     module: {
       rules: [
         {
-          test: /\.css$/i,
+          test: /\.s[ac]ss$/i,
           use: [
             isDev ? "style-loader" : MiniCssExtractPlugin.loader,
-            "css-loader"
+            "css-loader",
+            "sass-loader"
           ],
         },
         {
