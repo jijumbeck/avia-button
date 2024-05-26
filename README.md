@@ -26,3 +26,7 @@ $  npm  run  build:dev
 $  npm  run  start:prod
 
 ```
+
+## Источники
+
+Проект был подготовлен на основе обучающего ролика Ulbi TV [Webpack ПОЛНЫЙ КУРС от А до Я](https://youtu.be/acAH2_YT6bs?si=OxZzTSvzR85k5K38).
