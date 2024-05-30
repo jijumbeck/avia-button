@@ -29,11 +29,21 @@ $border-radius: 16px;
     }
 }
 
-.avia-button__text { 
+button {
+    $hover-color: mix($secondary-color-500, #000, 90%);
+
+    min-height: 60px;
+    padding: 0 16px;
+
+    border: none;
+    border-radius: $border-radius;
+    
     font-size: 19px;
     font-weight: 600;
     line-height: 25px;
+}
 
+.crop-text {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
